@@ -1,0 +1,26 @@
+{
+  "name": "sse-server",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "author": "Dilanka Rathnasiri",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "nodeman": "^1.1.2",
+    "typescript": "^5.8.2"
+  }
+}
