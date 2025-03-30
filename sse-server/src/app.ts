@@ -5,7 +5,7 @@ const port: number = 5000;
 const app: Express = express();
 
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
+    console.log(`App listening on port ${port}`);
 })
 
-app.use("/sse", sseRouter);
+app.use("/", sseRouter);

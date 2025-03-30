@@ -3,4 +3,4 @@ import { sseController } from "../controllers/sseController";
 
 export const sseRouter: Router = express.Router();
 
-sseRouter.get("/sse", async (_: Request, res: Response) => sseController(res));
+sseRouter.get("/sse", async (req: Request, res: Response) => sseController(req, res));
